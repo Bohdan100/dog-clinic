@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Arial";
+  src: local("Arial"),
+    url("../fonts/Arial-Regular.ttf")
+      format("truetype"),
+    url("../fonts/Arial-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Arial-Regular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: local("Arial"),
+    url("../fonts/Arial-Bold.ttf")
+      format("truetype"),
+    url("../fonts/Arial-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Arial-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: local("Geargia"),
+    url("../fonts/GeorgiaRegular.ttf")
+      format("truetype"),
+    url("../fonts/GeorgiaRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/GeorgiaRegular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

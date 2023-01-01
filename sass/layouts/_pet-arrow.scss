@@ -1,0 +1,73 @@
+.arrow-left-btn {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--color-dark);
+}
+
+.arrow-btn:hover,
+.arrow-btn:focus {
+  cursor: pointer;
+  background-color: var(--color-primary-light);
+}
+
+.active {
+  border: 2px solid var(--color-primary);
+}
+
+.active--one {
+  background-color: var(--color-primary);
+}
+
+.arrow-btn-one {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+.arrow-svg-two {
+  width: 27px;
+  height: 23px;
+}
+
+.arrow-svg {
+  width: 13px;
+  height: 23px;
+}
+
+.pet-arrow {
+  display: flex;
+  justify-content: center;
+
+  // width: 340px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 45px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 42px;
+    width: 300px;
+  }
+}
+
+.pet-arrow__item:not(:last-child) {
+  margin-right: 20px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 10px;
+  }
+}
+
+.one {
+  width: 9px;
+  height: 23px;
+}

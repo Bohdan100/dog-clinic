@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog's Planet</title>
+    <link rel="stylesheet" href="./assets/fonts/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
+      integrity="sha512-sqIVMkf5f8XGYI/UZYGs7wODxlUeoj9JknataPfUwtvrSKWMHrMXGZ7Evb6nabFYJQG15vFFyALe6r0nWCD1Ug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <link rel="stylesheet" href="./css/main.min.css" /> 
+  </head>
+
+  <body>
+    <header class="header--pet">
+      <div class="container header-container--pet"> 
+       <div class="mob-wrap" data-menu-header>
+         <a class="logo">
+           <h1 class="logo__title logo__title--pet">Dog's Planet</h1>
+           <p class="logo__subtitle logo__subtitle--pet">The veterinary clinik for dogs</p>
+         </a>
+
+         <button
+           type="button"
+           class="mobile-menu-btn"
+           aria-controls="mob-container"
+           data-menu-button
+         >
+           <svg width="30" height="30" aria-label="Switcher mobile menu">
+             <use
+               class="icon-menu icon-menu--pet"
+               href="./assets/icons/burger-sprite.svg#burger-hor"
+             ></use>
+             <use
+               class="icon-close"
+               href="./assets/icons/burger-sprite.svg#burger-ver"
+             ></use>
+           </svg>
+         </button>
+       </div>
+
+        <nav class="navigation">
+         <ul class="list menu">
+           <li class="menu__item--pet">
+             <a class="menu__link " href="./index.html">About the clinik</a>
+           </li>
+           <li class="menu__item--pet">
+             <a class="menu__link current" href="./pet.html">Our dogs</a>
+           </li>
+           <li class="menu__item--pet">
+             <a class="menu__link" href="./index.html#help">Our medicine</a>
+           </li>
+           <li class="menu__item--pet">
+             <a class="menu__link" href="#contacts">Contacts</a>
+           </li>
+         </ul>
+       </nav> 
+     </div>
+    </header>
+
+     <div class="mob-container" id="mob-container" data-menu>
+      <ul class="list mob-menu">
+        <li class="mob-menu__item">
+          <a class="mob-menu__link " href="./index.html"
+            >About the clinik</a>
+        </li>
+        <li class="mob-menu__item">
+          <a class="mob-menu__link current" href="./pet.html">Our dogs</a>
+        </li>
+        <li class="mob-menu__item">
+          <a class="mob-menu__link" href="./index.html">Our medicine</a>
+        </li>
+        <li class="mob-menu__item">
+          <a class="mob-menu__link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+  </div>  
+
+  <section class="friends" id="our-friends">
+    <div class="container">
+      <h2 class="heading--pet">
+        Our patients who
+        <span class="title-wrap">were treated in clinic</span>
+      </h2>
+      <div class="pet-slider--center" >
+        <div class="carousel-wrapper">
+          <ul class="list  js-actions pet-list" id="carousel">
+            <li class="pet-item">
+              <img src="./assets/images/1-oskar.png" alt="pets-katrine" />
+              <h3 class="subheading">Oskar</h3>
+              <button type="button" class="button--friends" data-action="Oskar">Learn more</button>
+            </li>
+            <li class="pet-item">
+              <img src="./assets/images/2-rikki.png" alt="pets-jennifer" />
+              <h3 class="subheading">Rikki</h3>
+              <button type="button" class="button--friends" data-action="Rikki">Learn more</button>
+            </li>
+            <li class="pet-item">
+              <img src="./assets/images/3-dingo.png" alt="pets-woody" />
+              <h3 class="subheading">Dingo</h3>
+              <button type="button" class="button--friends" data-action="Dingo">Learn more</button>
+            </li>
+            <li class="pet-item">
+              <img src="./assets/images/4-winni.png" alt="pets-sophia" />
+              <h3 class="subheading">Winni</h3>
+              <button type="button" class="button--friends" data-action="Winni">Learn more</button>
+            </li>
+            <li class="pet-item">
+              <img src="./assets/images/5-jessica.png" alt="pets-timmy" />
+              <h3 class="subheading">Jessica</h3>
+              <button type="button" class="button--friends" data-action="Jessica">Learn more</button>
+            </li>
+            <li class="pet-item">
+              <img src="./assets/images/6-rex.png" alt="pets-charly" />
+              <h3 class="subheading">Rex</h3>
+              <button type="button" class="button--friends" data-action="Rex">Learn more</button>
+            </li>
+            <li class="pet-item">
+              <img src="./assets/images/7-nikki.png" alt="pets-scarlet" />
+              <h3 class="subheading">Nikki</h3>
+              <button type="button" class="button--friends" data-action="Nikki">Learn more</button>
+            </li>
+            <li class="pet-item">
+              <img src="./assets/images/8-barri.png" alt="pets-freddie" />
+              <h3 class="subheading">Barry</h3>
+              <button type="button" class="button--friends" data-action="Barry">Learn more</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+         <ul class="list pet-arrow">
+            <li class="pet-arrow__item">
+              <button type="button" class="arrow-left-btn">
+                <svg class="arrow-svg-two">
+                  <use
+                    href="./assets/icons/pet-arrows-sprite.svg#arrow-2left"
+                  ></use>
+                </svg>
+              </button>
+            </li>
+            <li class="pet-arrow__item">
+              <button type="button" class="arrow-left-btn">
+                <svg class="arrow-svg">
+                  <use href="./assets/icons/pet-arrows-sprite.svg#arrow-left"></use>
+                </svg>
+              </button type="button" class="arrow-btn">
+            </li>
+            <li class="pet-arrow__item">
+              <button type="button" class="arrow-btn-one active active--one">
+                <svg class="one">
+                  <use href="./assets/icons/pet-arrows-sprite.svg#one"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="pet-arrow__item">
+              <button type="button" class="arrow-btn active">
+                <svg class="arrow-svg">
+                  <use href="./assets/icons/pet-arrows-sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="pet-arrow__item">
+              <button type="button" class="arrow-btn active">
+                <svg class="arrow-svg-two">
+                  <use href="./assets/icons/pet-arrows-sprite.svg#arrow-2right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul> 
+      </div>
+    </section>
+
+    <footer class="footer-bg" id="contacts">
+      <div class="container">
+
+          <div class="footer-info-flex">
+
+            <div class="footer-wrap">
+              <h3 class="heading heading--footer">For questions and <span class="title-wrap">suggestions</span></h3>
+              <ul class="list">
+                <li class="item">
+                  <a class="footer-link" href="mailto:email@shelter.com">
+                    <svg class="icon-contacts">
+                      <use href="./assets/icons/info.svg#icon-email"></use>
+                    </svg>
+                   dogs_planet@gmail.com
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="footer-link" href="tel:+13 674 567 75 54">
+                    <svg class="icon-contacts">
+                      <use href="./assets/icons/info.svg#icon-phone"></use>
+                    </svg>
+                    +38 (063) 000-00-00
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-wrap">
+              <h3 class="heading heading--footer">We are waiting for <span class="title-wrap">your visit</span> </h3>
+            
+              <ul class="list">
+                <li class="item-map">
+                  <a
+                    class="footer-link"
+                    href="https://goo.gl/maps/ZH8rseur8EUiqCyt5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                      <svg class="icon-map" width="21.85" height="32">
+                        <use href="./assets/icons/info.svg#icon-marker"></use>
+                      </svg>
+                    <p class="contacts"> Dmitry Donskoy street, 59, Odessa <span class="title-wrap">(location)</span> </p>
+                  </a>
+                </li>
+
+                <li class="item-map">
+                  <a
+                    class="footer-link"
+                    href="https://goo.gl/maps/p3YPaJmVT56WiW2T9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon-map">
+                      <use href="./assets/icons/info.svg#icon-marker"></use>
+                    </svg>
+                    <p class="contacts">Round street, 15, Kyiv <span class="title-wrap">(location)</span></p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-img">
+              <img  src="./assets/images/footer-puppy.png" alt="puppy" />
+            </div>
+          </div>
+          
+      </div>
+    </footer>   
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn-close" data-action="closeModal">
+          <svg class="modal__close-icon" width="12" height="12">
+            <use href="./assets/icons/burger-sprite.svg#vector-x"></use>
+          </svg>
+        </button>
+        <div class="pet-card" id="pet-cards"></div>
+      </div>
+    </div>
+
+    <script src="./js/mob-menu.js"></script>
+    <script src="./js/modal.js"  type="module"></script>
+  </body>
+</html>

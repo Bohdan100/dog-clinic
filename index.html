@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog's Planet</title>
+    <link rel="stylesheet" href="./assets/fonts/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
+      integrity="sha512-sqIVMkf5f8XGYI/UZYGs7wODxlUeoj9JknataPfUwtvrSKWMHrMXGZ7Evb6nabFYJQG15vFFyALe6r0nWCD1Ug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <link rel="stylesheet" href="./css/main.min.css" /> 
+  </head>
+
+  <body>
+     <div class="background">
+      <!-- HEADER -->
+      <header class="header">
+         <div class="container"> 
+          <div class="mob-wrap" data-menu-header>
+            <a class="logo">
+              <h1 class="logo__title">Dog's Planet</h1>
+              <p class="logo__subtitle"> The veterinary clinik for dogs</p>
+            </a>
+
+            <button
+              type="button"
+              class="mobile-menu-btn"
+              aria-controls="mob-container"
+              data-menu-button
+            >
+              <svg width="30" height="30" aria-label="Switcher mobile menu">
+                <use
+                  class="icon-menu"
+                  href="./assets/icons/burger-sprite.svg#burger-hor"
+                ></use>
+                <use
+                  class="icon-close"
+                  href="./assets/icons/burger-sprite.svg#burger-ver"
+                ></use>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Navigation-menu -->
+           <nav class="navigation">
+            <ul class="list menu">
+              <li class="menu__item">
+                <a class="menu__link current" href="./index.html"
+                  >About the clinik</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./pet.html">Our dogs</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#help">Our medicine</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav> 
+        </div>
+    </header>
+
+    <!-- Mobile navigation-menu -->
+     <div class="mob-container" id="mob-container" data-menu>
+      <ul class="list mob-menu mob-list">
+        <li class="mob-menu__item">
+          <a class="mob-menu__link current" href="./index.html"
+            >About the clinik</a>
+        </li>
+        <li class="mob-menu__item">
+          <a class="mob-menu__link" href="./pet.html">Our dogs</a>
+        </li>
+        <li class="mob-menu__item">
+          <a class="mob-menu__link" href="#help">Our medicine</a>
+        </li>
+        <li class="mob-menu__item">
+          <a class="mob-menu__link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+  </div> 
+
+  <!-- HERO -->
+       <section class="hero header--bg">
+        <div class="container">
+          <!-- conteiner with two blocks -->
+          <div class="hero__content">
+            <h2 class="hero__title">
+              <span class="title-wrap">A healthy dog creates <br>calm in your home</span>
+            </h2>
+            <p class="hero__text">
+              If your dog is sick, has lost his appetite and cheerfulness, then it's time to sound the alarm. Don't waste time, qualified veterinary care and the appointment of effective treatment are the key to success and a positive result!
+            </p>
+              <a class="hero__button" href="#contacts"><button type="button" class="button">Order a consultation</button></a>
+          </div>
+
+          <div>
+            <img src="./assets/images/start-screen-puppy.png" alt="puppy" />
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- ABOUT OUR CLINIK -->
+    <section class="about">
+      <div class="container">
+        <img
+          class="about__img"
+          src="./assets/images/dog-about.png"
+          alt="puppy"
+        />
+
+        <div class="about__wrap">
+          <h2 class="heading">
+            <span class="title-wrap"> About the clinik</span>
+          </h2>
+          <p class="about__text">
+           The medical staff of our veterinary clinic - it's a team of qualified veterinarians with extensive practical experience. Our specialists adhere to the highest standards of veterinary care. You can safely entrust them with the care of your dog.
+          </p>
+          <p class="about__text about-text--gap">
+            We have specialists in various fields: veterinary surgeon, sonographer, oncologist, urologist, gynecologist, dentist, ophthalmologist, dermatologist, etc. Our clinic is rightly called a multidisciplinary veterinary clinic. The staff of our clinic strives to restore the health of all patients and return the joy of communication, calmness and optimism to everyone who seeks help.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--  OUR PATIENTS -->
+    <section class="friends" id="our-friends">
+      <div class="container">
+        <h2 class="heading">
+          Our patients who 
+          <span class="title-wrap">were treated in our clinic</span>
+        </h2>
+
+        <div class="pet-slider" >
+          <button type="button" class="arrow-btn" id="btn-left">
+            <svg class="arrow-svg">
+              <use href="./assets/icons/arrow-sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
+
+          <div class="carousel-wrapper"> 
+            <ul class="list carousel js-actions" id="carousel">
+              <div class="carousel-cards" id="items-left">
+                <!-- 1.1 -->
+                <li class="friends__item">
+                  <img class="carousel-image"
+                    src="./assets/images/1-oskar.png"
+                    alt="dog Oskar"
+                  />
+                  <h3 class="subheading">Oskar</h3>
+                  <button type="button" class="button--friends"  data-action="Oskar">
+                    Learn more
+                  </button>
+                  <!-- 1.2 -->
+                </li>
+                <li class="friends__item">
+                  <img class="carousel-image"
+                    src="./assets/images/2-rikki.png"
+                    alt="dog Rikki"
+                  />
+                  <h3 class="subheading">Rikki</h3>
+                  <button type="button" class="button--friends"  data-action="Rikki">
+                    Learn more
+                  </button>
+                </li>
+                    <!-- 1.3 -->
+                <li class="friends__item">
+                  <img class="carousel-image" src="./assets/images/3-dingo.png" alt="dog Dingo" />
+                  <h3 class="subheading">Dingo</h3>
+                  <button type="button" class="button--friends"  data-action="Dingo">
+                    Learn more
+                  </button>
+                </li>
+              </div>
+                <!-- 2.1 -->
+              <div class=" carousel-cards" id="items-active">
+                <li class="friends__item">
+                  <img class="carousel-image"
+                    src="./assets/images/4-winni.png"
+                    alt="dog Winni"
+                  />
+                  <h3 class="subheading">Winni</h3>
+                  <button type="button" class="button--friends" data-action="Winni">
+                    Learn more
+                  </button>
+                </li>
+                  <!-- 2.2 -->
+                <li class="friends__item">
+                  <img class="carousel-image"
+                    src="./assets/images/5-jessica.png"
+                    alt="dog Jessica"
+                  />
+                  <h3 class="subheading">Jessica</h3>
+                  <button type="button" class="button--friends"  data-action="Jessica">
+                    Learn more
+                  </button>
+                </li>
+                 <!-- 2.3 -->
+                <li class="friends__item">
+                  <img class="carousel-image" src="./assets/images/6-rex.png" alt="dog Rex" />
+                  <h3 class="subheading">Rex</h3>
+                  <button type="button" class="button--friends"  data-action="Rex">
+                    Learn more
+                  </button>
+                </li>
+              </div>
+               <!-- 3.1 -->
+              <div class="carousel-cards" id="items-right">
+                <li class="friends__item">
+                  <img class="carousel-image" src="./assets/images/7-nikki.png" alt="dog Nikki" />
+                  <h3 class="subheading">Nikki</h3>
+                  <button type="button" class=" button--friends"  data-action="Nikki">
+                    Learn more
+                  </button>
+                </li>
+                 <!-- 3.2 -->
+                <li class="friends__item">
+                  <img class="carousel-image" src="./assets/images/8-barri.png" alt="dog Barry" />
+                  <h3 class="subheading">Barry</h3>
+                  <button type="button" class="button--friends"  data-action="Barry">
+                    Learn more
+                  </button>
+                </li>
+
+              </div>
+            </ul>
+          </div>
+
+          <button type="button" class="arrow-btn" id="btn-right">
+            <svg class="arrow-svg">
+              <use href="./assets/icons/arrow-sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+        <a class="button btn-get-to-know" href="./pet.html">
+          Get more info
+        </a>
+      </div>
+    </section>
+
+    <!-- OUR MEDICINE - How can we help your pet-->
+    <section class="help" id="help">
+      <div class="container">
+        <h2 class="heading">
+          How we keep your dog <span class="title-wrap">during the treatment</span>
+        </h2>
+        <ul class="list icons">
+          <li class="icons__item">
+            <a
+              href=""
+              class="icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icons__svg">
+                <use href="./assets/icons/sprite.svg#icon-icon-pet-food"></use>
+              </svg>
+              <h4 class="help-title">Natural food</h4>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a
+              href=""
+              class="icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icons__svg">
+                <use
+                  href="./assets/icons/sprite.svg#icon-icon-transportation"
+                ></use>
+              </svg>
+              <h4 class="help-title">Safe conditions</h4>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a
+              href=""
+              class="icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icons__svg">
+                <use href="./assets/icons/sprite.svg#icon-icon-toys"></use>
+              </svg>
+              <h4 class="help-title">Play with dog</h4>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a
+              href=""
+              class="icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icons__svg">
+                <use
+                  href="./assets/icons/sprite.svg#icon-icon-bowls-and-cups"
+                ></use>
+              </svg>
+              <h4 class="help-title">Clean bowl for food</h4>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a
+              href=""
+              class="icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icons__svg">
+                <use href="./assets/icons/sprite.svg#icon-icon-shampoos"></use>
+              </svg>
+              <h4 class="help-title">Washing</h4>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a
+              href=""
+              class="icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icons__svg">
+                <use href="./assets/icons/sprite.svg#icon-icon-vitamins"></use>
+              </svg>
+              <h4 class="help-title">Put vitamins in food</h4>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a
+              href=""
+              class="icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icons__svg">
+                <use href="./assets/icons/sprite.svg#icon-icon-medicines"></use>
+              </svg>
+              <h4 class="help-title">Give medications</h4>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a
+              href=""
+              class="icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icons__svg">
+                <use
+                  href="./assets/icons/sprite.svg#icon-icon-collars-leashes"
+                ></use>
+              </svg>
+              <h4 class="help-title">Flea collar</h4>
+            </a>
+          </li>
+          <li class="icons__item">
+            <a
+              href=""
+              class="icons__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icons__svg">
+                <use
+                  href="./assets/icons/sprite.svg#icon-icon-sleeping-area"
+                ></use>
+              </svg>
+              <h4 class="help-title">Comfortable sleep</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Our checking account -->
+    <section class="donation">
+      <div class="container">
+          <div class="reverse">
+            <img  class="donation__img" src="./assets/images/donation-dog.png" alt="puppy" />
+          
+            <div class="donation-wrap">
+              <h2 class="heading donation-heading">
+                <span class="title-wrap">Our checking account</span>
+              </h2>
+              <h5 class="donation__title">
+              PrivatBank / Bank card details
+            </h5>
+
+              <a class="donation__btn" href="">
+                <svg class="donation__svg">
+                  <use href="./assets/icons/info.svg#credit-card"></use>
+                </svg>
+                <span class="donation__account">2600 4430 6124 8314 5612</span>
+              </a>
+
+              <p class="donation__text">
+              You can conveniently pay for our services, we accept cash and non-cash forms of payment, we have a bank terminal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS - footer -->
+    <footer class="footer-bg" id="contacts">
+      <div class="container">
+
+          <div class="footer-info-flex">
+
+            <div class="footer-wrap">
+              <h3 class="heading heading--footer">For questions and <span class="title-wrap">suggestions</span></h3>
+              <ul class="list">
+                <li class="item">
+                  <a class="footer-link" href="mailto:email@shelter.com">
+                    <svg class="icon-contacts">
+                      <use href="./assets/icons/info.svg#icon-email"></use>
+                    </svg>
+                    dogs_planet@gmail.com
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="footer-link" href="tel:+13 674 567 75 54">
+                    <svg class="icon-contacts">
+                      <use href="./assets/icons/info.svg#icon-phone"></use>
+                    </svg>
+                    +38 (063) 000-00-00
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-wrap">
+              <h3 class="heading heading--footer">We are waiting for <span class="title-wrap">your visit</span> </h3>
+            
+              <ul class="list">
+                <li class="item-map">
+                  <a
+                    class="footer-link"
+                    href="https://goo.gl/maps/ZH8rseur8EUiqCyt5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                      <svg class="icon-map" width="21.85" height="32">
+                        <use href="./assets/icons/info.svg#icon-marker"></use>
+                      </svg>
+                    <p class="contacts"> Dmitry Donskoy street, 59, Odessa <span class="title-wrap">(location)</span> </p>
+                  </a>
+                </li>
+
+                <li class="item-map">
+                  <a
+                    class="footer-link"
+                     href="https://goo.gl/maps/p3YPaJmVT56WiW2T9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg class="icon-map">
+                      <use href="./assets/icons/info.svg#icon-marker"></use>
+                    </svg>
+                    <p class="contacts">Round street, 15, Kyiv<span class="title-wrap">(location)</span> </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-img">
+              <img  src="./assets/images/footer-puppy.png" alt="puppy" />
+            </div>
+          </div>
+          
+      </div>
+    </footer>   
+ 
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn-close" data-action="closeModal">
+          <svg class="modal__close-icon" width="12" height="12">
+            <use href="./assets/icons/burger-sprite.svg#vector-x"></use>
+          </svg>
+        </button>
+        <div class="pet-card" id="pet-cards"></div>
+      </div>
+    </div>
+ 
+    <script src="./js/mob-menu.js" ></script>
+    <script src="./js/modal.js"  type="module"></script>
+    <script src="./js/slider-animation.js"></script>
+  </body>
+</html>

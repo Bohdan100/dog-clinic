@@ -1,0 +1,13 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="burger-hor" viewBox="0 0 44 32">
+<path fill="none" style="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M0 30.545h43.636M0 16h43.636M0 1.455h43.636"></path>
+</symbol>
+<symbol id="burger-ver" viewBox="0 0 32 32">
+<path fill="none"  style="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.1333" d="M25.6 32v-32M14.933 32v-32M4.267 32v-32"></path>
+</symbol>
+<symbol id="vector-x" viewBox="0 0 32 32">
+<path d="M19.803 16l11.411-11.408c0.487-0.487 0.788-1.16 0.788-1.903 0-1.486-1.205-2.691-2.691-2.691-0.743 0-1.416 0.301-1.903 0.788v0l-11.408 11.411-11.411-11.411c-0.487-0.486-1.159-0.787-1.901-0.787-1.486 0-2.69 1.204-2.69 2.69 0 0.743 0.301 1.416 0.788 1.903l11.411 11.408-11.411 11.408c-0.487 0.487-0.788 1.16-0.788 1.903 0 1.486 1.204 2.69 2.69 2.69 0.742 0 1.415-0.301 1.901-0.787l11.411-11.411 11.408 11.411c0.487 0.487 1.16 0.788 1.903 0.788 1.486 0 2.691-1.205 2.691-2.691 0-0.743-0.301-1.416-0.788-1.903l-11.411-11.408z"></path>
+</symbol>
+</defs>
+</svg>
